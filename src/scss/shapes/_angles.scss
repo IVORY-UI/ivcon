@@ -1,0 +1,42 @@
+%angle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  &::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+  }
+}
+.ivcon-angle-up::before {
+  @extend %angle;
+  top: 3px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.ivcon-angle-right::before {
+  @extend %angle;
+  left: -3px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.ivcon-angle-down::before {
+  @extend %angle;
+  top: -3px;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.ivcon-angle-left::before {
+  @extend %angle;
+  left: 3px;
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}

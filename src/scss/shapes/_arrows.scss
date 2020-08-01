@@ -1,0 +1,52 @@
+%arrow {
+  position: absolute;
+  background-color: currentColor;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+  }
+}
+.ivcon-arrow-up {
+  @extend %arrow;
+  width: 1px;
+  height: 16px;
+  &::before {
+    left: -5px;
+    top: 1px;
+    transform: rotate(-45deg);
+  }
+}
+.ivcon-arrow-right {
+  @extend %arrow;
+  width: 16px;
+  height: 0.063em;
+  &::before {
+    right: 1px;
+    top: -5px;
+    transform: rotate(45deg);
+  }
+}
+.ivcon-arrow-down {
+  @extend %arrow;
+  width: 1px;
+  height: 16px;
+  &::before {
+    left: -5px;
+    top: 3px;
+    transform: rotate(135deg);
+  }
+}
+.ivcon-arrow-left {
+  @extend %arrow;
+  width: 16px;
+  height: 1px;
+  &::before {
+    left: 1px;
+    top: -5px;
+    transform: rotate(-135deg);
+  }
+}

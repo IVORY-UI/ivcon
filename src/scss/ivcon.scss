@@ -1,0 +1,24 @@
+[class^="ivcon-"], 
+[class*="ivcon-"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  &.xs {
+    transform: scale(1);
+  }
+  &.sm {
+    transform: scale(1.2);
+  }
+  &.md {
+    transform: scale(1.5);
+  }
+  &.lg {
+    transform: scale(2);
+  }
+  &.xl {
+    transform: scale(3);
+  }
+}
+@import './shapes/angles';
+@import './shapes/arrows';
+@import './shapes/suggested';
+@import './shapes/application';
