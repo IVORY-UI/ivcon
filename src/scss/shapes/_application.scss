@@ -1,53 +1,40 @@
 .ivcon-search {
-  position: relative;
   width: 16px;
   height: 16px;
   &::before {
-    content: '';
-    position: absolute;
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    border: 1px solid currentColor;
+    border: 1px solid currentColor
   }
   &::after {
-    content: '';
-    position: absolute;
     right: 0px;
     bottom: 2px;
     width: 6px;
     height: 1px;
     background-color: currentColor;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(45deg);
+    transform: rotate(45deg)
   }
 }
 .ivcon-menu {
-  position: relative;
   width: 16px;
   height: 1px;
   background-color: currentColor;
-  &::before {
-    content: '';
-    position: absolute;
-    top: -5px;
+  &::before,
+  &::after {
     left: 0;
     width: 16px;
     height: 1px;
-    background-color: currentColor;
+    background-color: currentColor
+  }
+  &::before {
+    top: -5px
   }
   &::after {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: 16px;
-    height: 1px;
-    background-color: currentColor;
+    top: 5px
   }
 }
 .ivcon-trash {
-  position: relative;
   width: 11px;
   height: 11px;
   border-left: solid 1px currentColor;
@@ -55,17 +42,13 @@
   border-bottom: solid 1px currentColor;
   border-radius: 0 0 2px 2px;
   &::before {
-    content: '';
-    position: absolute;
     left: -3px;
     top: -2px;
     width: 15px;
     height: 1px;
-    background-color: currentColor;
+    background-color: currentColor
   }
   &::after {
-    content: '';
-    position: absolute;
     left: 0;
     top: -5px;
     width: 7px;
@@ -73,36 +56,29 @@
     border-left: solid 1px currentColor;
     border-right: solid 1px currentColor;
     border-top: solid 1px currentColor;
-    border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0
   }
 }
 .ivcon-stop {
-  position: relative;
   width: 16px;
   height: 16px;
   border: solid 1px currentColor;
   border-radius: 8px;
   &::before {
-    content: '';
-    position: absolute;
     top: 7px;
     left: 0;
     width: 15px;
     height: 1px;
     background-color: currentColor;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
+    transform: rotate(45deg)
   }
 }
 .ivcon-chat {
-  position: relative;
   width: 16px;
   height: 10px;
   border: solid 1px currentColor;
   border-radius: 2px;
   &::before {
-    content: '';
-    position: absolute;
     top: 5px;
     left: 3px;
     width: 4px;
@@ -112,105 +88,81 @@
     border-right: solid 1px currentColor;
     border-top: solid 1px transparent;
     border-left: solid 1px transparent;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
+    transform: rotate(45deg)
   }
 }
 .ivcon-mail {
-  position: relative;
   width: 16px;
   height: 12px;
   border-radius: 1px;
   border: solid 1px currentColor;
+  &::before,
+  &::after {
+    width: 1px;
+    height: 10px;
+    background-color: currentColor;
+    transform-origin: bottom
+  }
   &::before {
-    content: '';
-    position: absolute;
     left: 7px;
     top: -4px;
-    width: 1px;
-    height: 10px;
-    background-color: currentColor;
-    -webkit-transform-origin: bottom;
-    transform-origin: bottom;
-    -webkit-transform: rotate(-54deg);
-    transform: rotate(-54deg);
+    transform: rotate(-54deg)
   }
   &::after {
-    content: '';
-    position: absolute;
     left: 6px;
     top: -4px;
-    width: 1px;
-    height: 10px;
-    background-color: currentColor;
-    -webkit-transform-origin: bottom;
-    transform-origin: bottom;
-    -webkit-transform: rotate(54deg);
-    transform: rotate(54deg);
+    transform: rotate(54deg)
   }
 }
 .ivcon-upload {
-  position: relative;
   margin-top: 12px;
-  width: 13px;
+  width: 15px;
   height: 4px;
   border: solid 1px currentColor;
   border-top: none;
   border-radius: 1px;
   &::before {
-    content: '';
-    position: absolute;
     top: -8px;
-    left: 5px;
+    left: 6px;
     width: 1px;
     height: 9px;
-    background-color: currentColor;
+    background-color: currentColor
   }
   &::after {
-    content: '';
-    position: absolute;
     top: -8px;
-    left: 3px;
+    left: 4px;
     width: 4px;
     height: 4px;
     border-top: solid 1px currentColor;
     border-right: solid 1px currentColor;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    transform: rotate(-45deg)
   }
 }
 .ivcon-download {
-  position: relative;
   margin-top: 12px;
-  width: 13px;
+  width: 15px;
   height: 4px;
   border-radius: 1px;
   border: solid 1px currentColor;
   border-top: none;
   &::before {
-    content: '';
-    position: absolute;
-    left: 5px;
+    left: 6px;
     top: -9px;
     width: 1px;
     height: 10px;
-    background-color: currentColor;
+    background-color: currentColor
   }
   &::after {
-    content: '';
-    position: absolute;
-    left: 3px;
+    left: 4px;
     top: -4px;
     width: 4px;
     height: 4px;
     border-top: solid 1px currentColor;
     border-right: solid 1px currentColor;
-    -webkit-transform: rotate(135deg);
-    transform: rotate(135deg);
+    transform: rotate(135deg)
   }
 }
 .ivcon-attach {
-  position: relative;
   width: 8px;
   height: 12px;
   border-radius: 4px 4px 0 0;
@@ -220,8 +172,6 @@
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   &::before {
-    content: '';
-    position: absolute;
     top: 11px;
     left: -1px;
     width: 4px;
@@ -229,11 +179,9 @@
     border-radius: 0 0 3px 3px;
     border-left: solid 1px currentColor;
     border-right: solid 1px currentColor;
-    border-bottom: solid 1px currentColor;
+    border-bottom: solid 1px currentColor
   }
   &::after {
-    content: '';
-    position: absolute;
     left: 1px;
     top: 1px;
     width: 2px;
@@ -241,80 +189,226 @@
     border-radius: 4px 4px 0 0;
     border-left: solid 1px currentColor;
     border-right: solid 1px currentColor;
-    border-top: solid 1px currentColor;
+    border-top: solid 1px currentColor
   }
 }
 .ivcon-link {
-  position: relative;
   width: 7px;
   height: 1px;
   background-color: currentColor;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   &::before {
-    content: '';
-    position: absolute;
     top: -3px;
     left: -7px;
     width: 8px;
     height: 5px;
     border-radius: 2px;
-    border: solid 1px currentColor;
+    border: solid 1px currentColor
   }
   &::after {
-    content: '';
-    position: absolute;
     top: -3px;
     right: -7px;
     width: 8px;
     height: 5px;
     border-radius: 2px;
-    border: solid 1px currentColor;
+    border: solid 1px currentColor
   }
 }
 .ivcon-power {
-  position: relative;
-  width: 13px;
-  height: 13px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   border: solid 1px currentColor;
   &::before {
-    content: '';
-    position: absolute;
-    left: 2px;
+    left: 3px;
     top: -2px;
     width: 1px;
     height: 8px;
     border-left: solid 3px #fff;
     border-right: solid 3px #fff;
-    background-color: currentColor;
+    background-color: currentColor
   }
 }
 .ivcon-bell {
-  position: relative;
   width: 11px;
   height: 12px;
   border: solid 1px currentColor;
   border-radius: 6px 6px 0 0;
   &::before {
-    content: '';
-    position: absolute;
     bottom: -5px;
     left: 2px;
     width: 3px;
     height: 3px;
     border-radius: 50%;
-    border: solid 1px currentColor;
+    border: solid 1px currentColor
   }
   &::after {
-    content: '';
-    position: absolute;
     bottom: -2px;
     left: -3px;
     width: 16px;
     height: 0px;
     border-top: solid 1px currentColor;
-    border-bottom: solid 1px transparent;
+    border-bottom: solid 1px transparent
   }
 }
-
+.ivcon-refresh {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  border-right: solid 1px transparent;
+  &::before {
+    left: 8px;
+    top: -1px;
+    width: 3px;
+    height: 3px;
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    transform: rotate(-172deg)
+  }
+}
+%info {
+  left: 8px;
+  width: 2px;
+  border-radius: 3px;
+  background: currentColor;
+}
+.ivcon-info {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid currentColor;
+  border-radius: 40px;
+  &::before {
+    @extend %info;
+    height: 2px;
+    top: 3px
+  }
+  &::after {
+    @extend %info;
+    bottom: 2px;
+    height: 8px
+  }
+}
+.ivcon-error {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid currentColor;
+  border-radius: 40px;
+  &::before {
+    @extend %info;
+    height: 8px;
+    top: 3px
+  }
+  &::after {
+    @extend %info;
+    bottom: 3px;
+    height: 2px
+  }
+}
+.ivcon-external {
+  display: block;
+  width: 12px;
+  height: 12px;
+  box-shadow: -1px 1px 0 0, -3px -3px 0 -2px, 3px 3px 0 -2px;
+  &::before {
+    right: -4px;
+    top: 1px;
+    width: 12px;
+    height: 1px;
+    background: currentColor;
+    transform: rotate(-45deg)
+  }
+  &::after {
+    right: -4px;
+    top: -4px;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid currentColor;
+    border-top: 1px solid currentColor
+  }
+}
+.ivcon-tag {
+  top: -5px;
+  left: -5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 1px 1px 1px 0;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  &::before {
+    left: 2px;
+    top: 1px;
+    width: 11px;
+    height: 14px;
+    border-radius: 1px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    transform: rotate(-45deg)
+  }
+  &::after {
+    left: 3px;
+    top: 3px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    border: 1px solid currentColor
+  }
+}
+%align {
+  width: 16px;
+  height: 7px;
+  border-top: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  &::before {
+    top: 2px;
+    height: 5px;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px currentColor
+  }
+}
+.ivcon-left-align {
+  @extend %align;
+  &::before {
+    left: 0;
+    width: 11px
+  }
+}
+.ivcon-center-align{
+  @extend %align;
+  &::before {
+    left: 3px;
+    width: 10px
+  }
+}
+.ivcon-right-align {
+  @extend %align;
+  &::before {
+    right: 0;
+    width: 11px
+  }
+}
+.ivcon-justified {
+  @extend %align;
+  &::before {
+    left: 0;
+    width: 16px
+  }
+}
+.ivcon-folder {
+  width: 16px;
+  height: 10px;
+  border: 1px solid currentColor;
+  border-radius: 0 2px 2px 2px;
+  &::before {
+    top: -4px;
+    left: -1px;
+    width: 50%;
+    height: 2px;
+    border-radius: 0 20px 0 0;
+    border: 1px solid currentColor
+  }
+}

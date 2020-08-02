@@ -1,5 +1,4 @@
 .ivcon-audio {
-  position: relative;
   width: 12px;
   height: 9px;
   border-left: solid 1px currentColor;
@@ -7,8 +6,6 @@
   border-bottom: solid 1px currentColor;
   border-radius: 0 0 50% 50%;
   &::before {
-    content: '';
-    position: absolute;
     left: 2px;
     top: -6px;
     width: 4px;
@@ -17,8 +14,6 @@
     border-radius: 4px;
   }
   &::after {
-    content: '';
-    position: absolute;
     left: 4px;
     bottom: -4px;
     width: 1px;
@@ -27,7 +22,6 @@
   }
 }
 .ivcon-wifi {
-  position: relative;
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -36,8 +30,6 @@
   border-bottom: solid 1px transparent;
   border-left: solid 1px transparent;
   &::before {
-    content: '';
-    position: absolute;
     left: -5px;
     top: -5px;
     width: 14px;
@@ -46,11 +38,9 @@
     border-top: solid 1px currentColor;
     border-right: solid 1px transparent;
     border-bottom: solid 1px transparent;
-    border-left: solid 1px transparent;
+    border-left: solid 1px transparent
   }
   &::after {
-    content: '';
-    position: absolute;
     left: -9px;
     top: -9px;
     width: 22px;
@@ -59,6 +49,20 @@
     border-top: solid 1px currentColor;
     border-right: solid 1px transparent;
     border-bottom: solid 1px transparent;
-    border-left: solid 1px transparent;
+    border-left: solid 1px transparent
+  }
+}
+.ivcon-laptop {
+  width: 16px;
+  height: 11px;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  &::after {
+    left: -2px;
+    bottom: -5px;
+    width: 19px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 100px
   }
 }

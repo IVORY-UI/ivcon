@@ -1,6 +1,4 @@
 %code-psuedo {
-  content: '';
-  position: absolute;
   top: 6px;
   width: 8px;
   height: 8px;
@@ -8,29 +6,25 @@
   border-bottom: 1px solid currentColor;
 }
 .ivcon-code {
-  position: relative;
   width: 8px;
   height: 20px;
   &::before {
     @extend %code-psuedo;
     left: -4px;
-    transform: rotate(45deg);
+    transform: rotate(45deg)
   }
   &::after {
     @extend %code-psuedo;
     left: 4px;
-    transform: rotate(-135deg);
+    transform: rotate(-135deg)
   }
 }
 %code-slash-psuedo {
-  content: '';
-  position: absolute;
   width: 8px;
   height: 8px;
   transform: rotate(-60deg);
 }
 .ivcon-code-slash {
-  position: absolute;
   width: 1px;
   height: 16px;
   background: currentColor;
@@ -40,13 +34,13 @@
     border-left: 1px solid currentColor;
     border-top: 1px solid currentColor;
     left: -8px;
-    top: 5px;
+    top: 5px
   }
   &::after {
     @extend %code-slash-psuedo;
     border-right: 1px solid currentColor;
     border-bottom: 1px solid currentColor;
     right: -8px;
-    top: 3px;
+    top: 3px
   }
 }

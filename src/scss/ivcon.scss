@@ -1,7 +1,13 @@
 [class^="ivcon-"], 
 [class*="ivcon-"] {
+  position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+  }
   &.xs {
     transform: scale(1);
   }
@@ -18,8 +24,7 @@
     transform: scale(3);
   }
 }
-@import './shapes/angles';
-@import './shapes/arrows';
+@import './shapes/directional';
 @import './shapes/suggested';
 @import './shapes/application';
 @import './shapes/code';

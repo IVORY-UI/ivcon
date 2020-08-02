@@ -1,0 +1,86 @@
+%angle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  &::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+  }
+}
+.ivcon-angle-up::before {
+  @extend %angle;
+  top: 3px;
+  transform: rotate(-45deg)
+}
+.ivcon-angle-right::before {
+  @extend %angle;
+  left: -3px;
+  transform: rotate(45deg)
+}
+.ivcon-angle-down::before {
+  @extend %angle;
+  top: -3px;
+  transform: rotate(135deg)
+}
+.ivcon-angle-left::before {
+  @extend %angle;
+  left: 3px;
+  transform: rotate(-135deg)
+}
+%arrow {
+  position: relative;
+  background-color: currentColor;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+  }
+}
+.ivcon-arrow-up {
+  @extend %arrow;
+  width: 1px;
+  height: 16px;
+  &::before {
+    left: -5px;
+    top: 1px;
+    transform: rotate(-45deg)
+  }
+}
+.ivcon-arrow-right {
+  @extend %arrow;
+  width: 16px;
+  height: 1px;
+  &::before {
+    right: 1px;
+    top: -5px;
+    transform: rotate(45deg)
+  }
+}
+.ivcon-arrow-down {
+  @extend %arrow;
+  width: 1px;
+  height: 16px;
+  &::before {
+    left: -5px;
+    top: 3px;
+    transform: rotate(135deg)
+  }
+}
+.ivcon-arrow-left {
+  @extend %arrow;
+  width: 16px;
+  height: 1px;
+  &::before {
+    left: 1px;
+    top: -5px;
+    transform: rotate(-135deg)
+  }
+}
