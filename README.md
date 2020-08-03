@@ -1,2 +1,2 @@
 # ivcon
-Pure css icons by IVORY UI.
+Icons by IVORY UI.
