@@ -1,6 +1,6 @@
 # ivcon
-Pure css icons by IVORY UI.
+ivcon is an icons library developed in pure css.
 
-=========================================
-This project in no-longer active.
-=========================================
+
+## No-longer active.
+As there are many open-source icon libraries available, we are decommissioned the ivcon project.
