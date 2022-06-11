@@ -1,2 +1,2 @@
 # ivcon
-ivcon is an icons library developed in pure css.
+Pure css icons by IVORY UI.
