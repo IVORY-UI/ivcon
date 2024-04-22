@@ -15,7 +15,7 @@
     "build:styles": "node-sass --include-path scss src/scss/ivcon.scss dist/ivcon.min.css --output-style compressed",
     "copy:files": "cp package.json dist/ && cp README.md dist/",
     "build": "npm run clean && npm run build:styles && npm run copy:files",
-    "prepare:demo": "npm run clean && npm run build:styles && cp dist/ivcon.min.css demo/",
+    "prepare:demo": "npm i && npm run build:styles && cp dist/ivcon.min.css demo/",
     "publish:ivcon": "npm publish dist"
   },
   "publishConfig": {
