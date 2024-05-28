@@ -7,6 +7,9 @@ Desktop.ini
 # Mac crap
 .DS_Store
 
+# Package Lock
+package-lock.json
+
 # Node Modules
 node_modules/
 

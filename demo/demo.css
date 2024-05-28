@@ -45,8 +45,11 @@ table {
 /* Demo Styles */
 body {
   background-color: #F5F7FB;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
-.container {
+.page-container {
   position: relative;
   display: block;
   width: 100%;
@@ -54,14 +57,19 @@ body {
   margin: 0 auto;
   padding: 60px 0;
 }
-.frames {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+h2 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
 }
-.frame {
+.cards-container {
   display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  width: 100%;
+}
+.card {
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 72px;
