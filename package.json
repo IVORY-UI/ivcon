@@ -1,7 +1,7 @@
 {
   "name": "ivoryui-ivcon",
   "description": "Pure css icons by IVORY UI",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/IVORY-UI/ivcon.git"
@@ -10,12 +10,14 @@
     "css",
     "icons"
   ],
+  "files": [
+     "dist/",
+     "README.md"
+   ],
   "scripts": {
     "clean": "rm -rf dist",
     "build:styles": "sass --style=compressed --source-map src/scss/ivcon.scss dist/ivcon.min.css",
-    "copy:files": "cp package.json dist/ && cp README.md dist/",
-    "build": "npm run clean && npm run build:styles && npm run copy:files && npm run prepare:demo",
-    "prepare:demo": "cp dist/ivcon.min.css demo/ && cp dist/ivcon.min.css.map demo/",
+    "build": "npm run clean && npm run build:styles",
     "watch:styles": "sass --watch src/scss/ivcon.scss:dist/ivcon.min.css --style=compressed --source-map"
   },
   "devDependencies": {
