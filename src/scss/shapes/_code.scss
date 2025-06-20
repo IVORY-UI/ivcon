@@ -44,3 +44,65 @@
     top: 3px
   }
 }
+.ivcon-browser {
+  width: 20px;
+  height: 16px;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  background: transparent;
+  position: relative;
+  box-sizing: border-box;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 4px;
+    background: currentColor;
+    opacity: 0.12;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 1.5px;
+    width: 2px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 50%;
+    box-shadow: 4px 0 0 0 currentColor, 8px 0 0 0 currentColor;
+    opacity: 0.5;
+  }
+}
+.ivcon-terminal {
+  width: 20px;
+  height: 14px;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  background: transparent;
+  position: relative;
+  box-sizing: border-box;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    width: 5px;
+    height: 5px;
+    border-right: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+    transform: rotate(-45deg);
+    border-radius: 1px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    bottom: 2px;
+    width: 4px;
+    height: 1px;
+    background: currentColor;
+    border-radius: 1px;
+  }
+}
