@@ -1,3 +1,9 @@
+@use './shapes/directional';
+@use './shapes/suggested';
+@use './shapes/application';
+@use './shapes/code';
+@use './shapes/media';
+
 [class^="ivcon-"], 
 [class*="ivcon-"] {
   position: relative;
@@ -24,8 +30,3 @@
     transform: scale(3);
   }
 }
-@import './shapes/directional';
-@import './shapes/suggested';
-@import './shapes/application';
-@import './shapes/code';
-@import './shapes/media';
