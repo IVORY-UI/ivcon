@@ -11,10 +11,12 @@
     "icons"
   ],
   "scripts": {
-    "build:styles": "sass --style=compressed src/scss/ivcon.scss dist/ivcon.min.css",
+    "clean": "rm -rf dist",
+    "build:styles": "sass --style=compressed --source-map src/scss/ivcon.scss dist/ivcon.min.css",
     "copy:files": "cp package.json dist/ && cp README.md dist/",
-    "build": "npm run build:styles && npm run copy:files",
-    "prepare:demo": "cp dist/ivcon.min.css demo/"
+    "build": "npm run clean && npm run build:styles && npm run copy:files && npm run prepare:demo",
+    "prepare:demo": "cp dist/ivcon.min.css demo/ && cp dist/ivcon.min.css.map demo/",
+    "watch:styles": "sass --watch src/scss/ivcon.scss:dist/ivcon.min.css --style=compressed --source-map"
   },
   "devDependencies": {
     "sass": "^1.77.2"

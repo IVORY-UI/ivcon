@@ -1,5 +1,5 @@
 .ivcon-audio {
-  width: 12px;
+  width: 11px;
   height: 9px;
   border-left: solid 1px currentColor;
   border-right: solid 1px currentColor;
@@ -8,7 +8,7 @@
   &::before {
     left: 2px;
     top: -6px;
-    width: 4px;
+    width: 3px;
     height: 10px;
     border: solid 1px currentColor;
     border-radius: 4px;
@@ -67,3 +67,81 @@
     border-radius: 100px
   }
 }
+.ivcon-battery-full {
+  width: 18px;
+  height: 10px;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  position: relative;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0);
+  &::before {
+    content: "";
+    position: absolute;
+    right: -2.5px;
+    top: 2px;
+    width: 2px;
+    height: 4px;
+    background: currentColor;
+    border-radius: 0 1px 1px 0;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 14px;
+    height: 6px;
+    background: currentColor;
+    border-radius: 1px;
+  }
+}
+.ivcon-battery-empty {
+  width: 18px;
+  height: 10px;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  position: relative;
+  box-sizing: border-box;
+  background: transparent;
+  &::before {
+    content: "";
+    position: absolute;
+    right: -2.5px;
+    top: 2px;
+    width: 2px;
+    height: 4px;
+    background: currentColor;
+    border-radius: 0 1px 1px 0;
+  }
+}
+.ivcon-battery-half {
+  width: 18px;
+  height: 10px;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  position: relative;
+  box-sizing: border-box;
+  background: transparent;
+  &::before {
+    content: "";
+    position: absolute;
+    right: -2.5px;
+    top: 2px;
+    width: 2px;
+    height: 4px;
+    background: currentColor;
+    border-radius: 0 1px 1px 0;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 6px;
+    height: 6px;
+    background: currentColor;
+    border-radius: 1px;
+  }
+}
+
